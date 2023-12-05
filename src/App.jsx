@@ -1,20 +1,15 @@
-import Highcharts from "highcharts";
-import HighchartsReact from "highcharts-react-official";
+import { Header } from "./Header";
+import { Content } from "./Content";
+import { Footer } from "./Footer";
 
-export default function App() {
-  const options = {
-    title: {
-      text: "My chart",
-    },
-    series: [
-      {
-        data: [1, 2, 3],
-      },
-    ],
-  };
+function App() {
   return (
     <div>
-      <HighchartsReact highcharts={Highcharts} options={options} />
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }
+
+export default App;
